@@ -34,7 +34,6 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="DrawerScreen" component={DrawerNavigator} />
-          <Stack.Screen name="DDrawerScreen" component={DrawerNavigator} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
