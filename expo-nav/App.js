@@ -2,8 +2,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { StatusBar } from "expo-status-bar";
-import First from "./components/First";
-import Second from "./components/Second";
+import Percussion from "./components/Percussion";
+import Wind from "./components/Wind";
+import { StyleSheet, Image } from "react-native";
 
 /*
 1. npm install react-native-reanimated@1 --save --save-exact
@@ -19,8 +20,8 @@ function DrawerNavigator() {
 
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="First Name" component={First} />
-      <Drawer.Screen name="Second Name" component={Second} />
+      <Drawer.Screen name="Percussion Instruments" component={Percussion} />
+      <Drawer.Screen name="Wind Instruments" component={Wind} />
     </Drawer.Navigator>
   )
 }
@@ -33,6 +34,7 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="DrawerScreen" component={DrawerNavigator} />
+          <Stack.Screen name="DDrawerScreen" component={DrawerNavigator} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
