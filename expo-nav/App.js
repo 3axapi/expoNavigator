@@ -11,6 +11,7 @@ import { StyleSheet, Image } from "react-native";
 2. npm install @react-navigation/native-stack
 3. npm install @react-navigation/drawer
 4. npx expo install react-native-gesture-handler react-native-reanimated
+5. npm install react-native-media-query --save
 */
 
 const Stack = createNativeStackNavigator()
