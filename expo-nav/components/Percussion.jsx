@@ -9,10 +9,10 @@ function Percussion() {
 
     return (
         <View style={styles.container}>
-            <Conga style={styles.instrblock}/>
-            <DrumSet style={styles.instrblock}/>
-            <Timpani style={styles.instrblock}/>
-            <Xylophone style={styles.instrblock}/>
+            <Conga/>
+            <DrumSet/>
+            <Timpani/>
+            <Xylophone/>
         </View>
     )
 }
@@ -21,15 +21,6 @@ export default Percussion;
 
 const styles = StyleSheet.create({
     container: {
-        
-        borderColor: "#aaaaaa",
-        borderStyle: "solid",
-        borderWidth: 7,
-        borderRadius: "10%",
-        margin: 10
-    },
-
-    instrblock: {
-
+        backgroundColor: "#eeeeee",
     }
 })
